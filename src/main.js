@@ -5,7 +5,7 @@ import Vuex from 'vuex'
 // import router from './router'
 import VueTaber from '@/utils/vue-tabs.js'
 const vueTaber = new VueTaber({
-  persist: true
+  persist: false
 })
 Vue.use(VueTaber)
 

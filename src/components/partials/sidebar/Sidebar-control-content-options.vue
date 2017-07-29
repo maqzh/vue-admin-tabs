@@ -88,8 +88,8 @@ export default {
       this.SkinItems = JSON.parse(data.bodyText)
     })
     $("[data-toggle='offcanvas']").click(function () {
-      // var sc = $('body').hasClass('sidebar-collapse')
-      // window.store('layout_sidebar', !sc)
+      var sc = $('body').hasClass('sidebar-collapse')
+      window.store('layout_sidebar', !sc)
     })
   },
   methods: {

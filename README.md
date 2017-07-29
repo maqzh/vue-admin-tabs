@@ -55,3 +55,8 @@ npm run e2e
 # run all tests
 npm test
 ```
+## Preview
+
+![image](https://github.com/maqzh/vue-admin-tabs/blob/master/docs/`V[X9`W0EPJ)V8HIGJ{WINL.png)
+
+![image](https://github.com/maqzh/vue-admin-tabs/blob/master/docs/Q81QW0(9~{2C~F_1@44S~{6.png)

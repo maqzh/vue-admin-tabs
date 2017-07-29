@@ -78,8 +78,12 @@ export default class VueTaber {
         let _this = this
         let component = './' + tab.component + '.vue'
         let meta = {
+            cls: tab.cls,
             name: tab.name,
             title: tab.params.title,
+            closable: tab.closable,
+            beforeCreate: tab.params.beforeCreate,
+            beforeClose: tab.params.beforeClose,
             component: (resolve) => {
                 require.ensure([], (require) => {
                     try{
@@ -94,6 +98,20 @@ export default class VueTaber {
             }
         }
         return meta
+    }
+
+    $add(name, title, component, cls, closable, beforeCreate, beforeClose) {
+        this.open({
+            cls: cls,
+            name: name,
+            closable: closable || true,
+            component: component,
+            params: {
+                title: title,
+                beforeCreate: beforeCreate,
+                beforeClose: beforeClose
+            }
+        })
     }
 
     $on (event, call) {

@@ -5,7 +5,7 @@ import Vuex from 'vuex'
 // import router from './router'
 import VueTaber from '@/utils/vue-tabs.js'
 const vueTaber = new VueTaber({
-  persist: true
+  persist: false
 })
 Vue.use(VueTaber)
 
@@ -16,16 +16,12 @@ import VueResource from 'vue-resource'
 // bootstrap
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap/dist/js/bootstrap.min.js'
-// import 'bootstrap-switch/dist/css/bootstrap3/bootstrap-switch.min.css'
-// import 'bootstrap-switch/dist/js/bootstrap-switch.min.js'
 // AdminLTE
 import 'admin-lte/dist/css/AdminLTE.min.css'
 import 'admin-lte/dist/css/skins/_all-skins.min.css'
 import 'admin-lte/dist/js/app.min.js'
 // font-awesome
 import 'font-awesome/css/font-awesome.min.css'
-// jquery-slimscroll
-import 'jquery-slimscroll/jquery.slimscroll.min.js'
 // layer
 import layer from 'vue-layer'
 Vue.prototype.$layer = layer(Vue)

@@ -11,8 +11,8 @@
           <small v-if="item.smcls&&item.smcls!=''" v-bind:class="item.smcls">{{item.smtext}}</small>
         </span>
       </a>
-      <ul v-if="item.sub&&item.sub!=null" v-bind:class="item.ulcls" v-for="sub in item.sub">
-        <li>
+      <ul v-if="item.sub&&item.sub!=null" :class="item.ulcls">
+        <li v-for="sub in item.sub">
           <a href="javascript:void(0)" @click="clickMenuItem(sub)">
             <i v-bind:class="sub.icls"></i>
             {{sub.text}}

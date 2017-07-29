@@ -11,6 +11,8 @@
 		"sub": [
 			{
 				"cls": "",
+				"tcls": "fa fa-home",
+				"closable": false,
 				"href": "Dashboard",
 				"icls": "fa fa-circle-o",
 				"name": "Dashboard v1",
@@ -19,6 +21,7 @@
 			},
 			{
 				"cls": "active",
+				"tcls": "fa fa-user",
 				"href": "user",
 				"icls": "fa fa-circle-o",
 				"name": "User Manager",

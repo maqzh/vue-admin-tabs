@@ -212,6 +212,8 @@ export default {
             return {
                 name: v.name,
                 key: v.key,
+                cls: v.cls,
+                closable: v.closable,
                 component: v.component,
                 params: v.params,
                 active: v.active
@@ -224,97 +226,4 @@ export default {
 </script>
 <style lang="less">
 @import './tabs.less';
-/*.vue-tabs {
-    position: relative;
-}
-.tabs-list-wrapper {
-    padding: 0px 8px;
-}
-@keyframes loading-rotate {
-    from {transform: rotate(0);}
-    to {transform: rotate(360deg);}
-}
-@-webkit-keyframes loading-rotate {
-    from {transform: rotate(0);}
-    to {transform: rotate(360deg);}
-}
-.tabs-list {
-    list-style: none;
-    margin: 0px;
-    padding: 0px;
-    overflow: auto;
-    width: auto;
-    zoom: 1;
-    > li {
-        float: left;
-        padding: 6px 18px;
-        position: relative;
-        color: #999;
-        &.loading:before {
-            content: ' ';
-            box-sizing: border-box;
-            display: inline-block;
-            width: 14px;
-            height: 14px;
-            position: absolute;
-            left: 0px;
-            top: 10px;
-            border-radius: 9px;
-            border: 2px solid #1ab394;
-            border-top-color: transparent;
-            border-left-color: transparent;
-            animation: loading-rotate .8s infinite linear;
-            -webkit-animation: loading-rotate .8s infinite linear;
-        }
-        &.active {
-            color: #333;
-            &:after {
-                content: ' ';
-                position: absolute;
-                bottom: 0px;
-                width: 100%;
-                height: 2px;
-                background-color: #1ab394;
-                left: 0px;
-            }
-            .btn-close {
-                opacity: 1;
-            }
-        }
-        &:hover {
-            cursor: pointer;
-            .btn-close {
-                opacity: 1;
-            }
-        }
-        .btn-close {
-            position: absolute;
-            display: inline-block;
-            opacity: 0;
-            top: 2px;
-            right: 0px;
-            line-height: 12px;
-            width: 14px;
-            height: 14px;
-            border-radius: 14px;
-            font-size: 12px;
-            color: #999;
-            transition: all 0.2s ease;
-            &:hover {
-                color: #333;
-                transform: scale(1.5);
-                cursor: pointer;
-            }
-        }
-    }
-}*/
-.tabs-content-wrapper {
-    position: relative;
-    .tabs-content {
-        display: none;
-        &.active {
-            display: block;
-        }
-    }
-}
 </style>

@@ -51,15 +51,7 @@ export default {
         return
       }
       this.selected = item.text
-      this.$taber.open({
-        cls: item.cls,
-        name: item.name,
-        closable: item.closable || true,
-        component: item.component,
-        params: {
-          title: item.text
-        }
-      })
+      this.$taber.$add(item.name, item.text, item.component, item.tcls, item.closable)
     }
   }
 }

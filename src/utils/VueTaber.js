@@ -100,11 +100,14 @@ export default class VueTaber {
         return meta
     }
 
-    $add(name, title, component, cls, closable, beforeCreate, beforeClose) {
+    $add(name, title, component, tcls, closable, beforeCreate, beforeClose) {
+        if(typeof(closable) === 'undefined') {
+            closable = true
+        }
         this.open({
-            cls: cls,
+            cls: tcls,
             name: name,
-            closable: closable || true,
+            closable: closable,
             component: component,
             params: {
                 title: title,

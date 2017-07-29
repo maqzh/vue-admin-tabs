@@ -57,6 +57,8 @@ npm test
 ```
 ## Preview
 
-![image](https://github.com/maqzh/vue-admin-tabs/blob/master/docs/images/Q81QW0(9~%7B2C~F_1%4044S~%7B6.png)
+![image](https://github.com/maqzh/vue-admin-tabs/blob/master/docs/screenshots/dashboard.png)
 
-![image](https://github.com/maqzh/vue-admin-tabs/blob/master/docs/images/%60V%5BX9%60W0EPJ)V8HIGJ%7BWINL.png)
+![image](https://github.com/maqzh/vue-admin-tabs/blob/master/docs/screenshots/usermanager.png)
+
+![image](https://github.com/maqzh/vue-admin-tabs/blob/master/docs/screenshots/settings.png)

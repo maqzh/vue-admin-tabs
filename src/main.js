@@ -2,6 +2,7 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
 import Vuex from 'vuex'
+Vue.use(Vuex)
 // import router from './router'
 import VueTaber from '@/utils/vue-tabs.js'
 const vueTaber = new VueTaber({
@@ -11,7 +12,9 @@ Vue.use(VueTaber)
 
 // load vuex i18n module
 import vuexI18n from 'vuex-i18n'
-import VueResource from 'vue-resource'
+// http
+import Axios from 'axios'
+Vue.prototype.$http = Axios
 
 // bootstrap
 import 'bootstrap/dist/css/bootstrap.css'
@@ -30,9 +33,6 @@ import '../static/css/style.css'
 
 // components
 import App from './App'
-
-Vue.use(Vuex)
-Vue.use(VueResource)
 
 // initialize the vuex store using the vuex module. note that you can change the
 //  name of the module if you wish

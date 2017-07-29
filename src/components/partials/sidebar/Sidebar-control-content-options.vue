@@ -60,22 +60,22 @@ export default {
     }
   },
   mounted () {
-    var that = this
-    that.lang = window.get('lang') || 'cn'
+    var _this = this
+    _this.lang = window.get('lang') || 'cn'
     this.$i18n.set(this.lang)
-    that.skin = window.get('skin') || 'skin-blue'
-    $('body').addClass(that.skin)
-    this.$http.get('static/server/lang.json').then(function (data) {
-      this.LangItems = JSON.parse(data.bodyText)
-      $.each(this.LangItems, function (i, n) {
-        that.$http.get('static/i18n/' + n.key + '.json').then(function (data) {
-          that.$i18n.add(n.key, JSON.parse(data.bodyText))
+    _this.skin = window.get('skin') || 'skin-blue'
+    $('body').addClass(_this.skin)
+    this.$http.get('static/server/lang.json').then(function (response) {
+      _this.LangItems = response.data
+      $.each(_this.LangItems, function (i, n) {
+        _this.$http.get('static/i18n/' + n.key + '.json').then(function (response) {
+          _this.$i18n.add(n.key, response.data)
         })
       })
     })
-    this.$http.get('static/server/layout.json').then(function (data) {
-      this.LayoutItems = JSON.parse(data.bodyText)
-      $.each(this.LayoutItems, function (i, n) {
+    this.$http.get('static/server/layout.json').then(function (response) {
+      _this.LayoutItems = response.data
+      $.each(_this.LayoutItems, function (i, n) {
         n.model = window.get(n.key) === 'undefined' ? n.model : window.get(n.key)
         $('body').removeClass(n.cls)
         n.model = n.model === 'true'
@@ -84,8 +84,8 @@ export default {
         }
       })
     })
-    this.$http.get('static/server/skins.json').then(function (data) {
-      this.SkinItems = JSON.parse(data.bodyText)
+    this.$http.get('static/server/skins.json').then(function (response) {
+      _this.SkinItems = response.data
     })
     $("[data-toggle='offcanvas']").click(function () {
       var sc = $('body').hasClass('sidebar-collapse')

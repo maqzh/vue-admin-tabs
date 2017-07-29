@@ -32,8 +32,8 @@ export default {
   },
   mounted () {
     var that = this
-    this.$http.get('static/server/menu.json').then(function (data) {
-      that.menuItems = JSON.parse(data.bodyText)
+    this.$http.get('static/server/menu.json').then(function (response) {
+      that.menuItems = response.data
     })
   },
   created () {

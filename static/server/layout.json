@@ -1,0 +1,44 @@
+[
+  {
+    "key":"layout_fixed",
+    "model":"true",
+    "text": "sidebar.layout.fixed",
+    "cls": "fixed",
+    "description": "Activate the fixed layout. You can\"t use fixed and boxed layouts together"
+  },
+  {
+    "key":"layout_boxed",
+    "model":"false",
+    "text": "sidebar.layout.boxed",
+    "cls": "layout-boxed",
+    "description": "Activate the boxed layout"
+  },
+  {
+    "key":"layout_sidebar",
+    "model":"layout_sidebar",
+    "text": "sidebar.layout.toggle",
+    "cls": "sidebar-collapse",
+    "description": "Toggle the left sidebar\"s state (open or collapse)"
+  },
+  {
+    "key":"layout_expand",
+    "model":"false",
+    "text": "sidebar.layout.exportHover",
+    "cls": "expandOnHover",
+    "description": "Let the sidebar mini expand on hover"
+  },
+  {
+    "key":"layout_slide",
+    "model":"false",
+    "text": "sidebar.layout.slide",
+    "cls": "control-sidebar-open",
+    "description": "Toggle between slide over content and push content effects"
+  },
+  {
+    "key":"layout_skin",
+    "model":"false",
+    "text": "sidebar.layout.skin",
+    "cls": "toggle",
+    "description": "Toggle between dark and light skins for the right sidebar"
+  }
+]

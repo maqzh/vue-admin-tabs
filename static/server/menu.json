@@ -1,0 +1,82 @@
+[
+	{
+		"cls": "active treeview",
+		"href": "",
+		"icls": "fa fa-dashboard",
+		"name": "Dashboard",
+		"text": "Dashboard",
+		"scls": "pull-right-container",
+		"sicls": "fa fa-angle-left pull-right",
+		"ulcls": "treeview-menu",
+		"sub": [
+			{
+				"cls": "",
+				"href": "Dashboard",
+				"icls": "fa fa-circle-o",
+				"name": "Dashboard v1",
+				"text": "Dashboard v1",
+				"component": "components/partials/Dashboard"
+			},
+			{
+				"cls": "active",
+				"href": "user",
+				"icls": "fa fa-circle-o",
+				"name": "User Manager",
+				"text": "User Manager",
+				"component": "components/auth/user-manager"
+			}
+		]
+	},
+	{
+		"cls": "treeview",
+		"href": "",
+		"icls": "fa fa-files-o",
+		"name": "Layout Options",
+		"text": "Layout Options",
+		"scls": "pull-right-container",
+		"sscls": "label label-primary pull-right",
+		"sstext": "4",
+		"ulcls": "treeview-menu",
+		"sub": [
+			{
+				"cls": "",
+				"href": "pages/layout/top-nav.html",
+				"icls": "fa fa-circle-o",
+				"name": "Top Navigation",
+				"text": "Top Navigation",
+				"component": "components/auth/role-manager"
+			},
+			{
+				"cls": "",
+				"href": "pages/layout/boxed.html",
+				"icls": "fa fa-circle-o",
+				"name": "Boxed",
+				"text": "Boxed"
+			},
+			{
+				"cls": "",
+				"href": "pages/layout/fixed.html",
+				"icls": "fa fa-circle-o",
+				"name": "Fixed",
+				"text": "Fixed"
+			},
+			{
+				"cls": "",
+				"href": "pages/layout/collapsed-sidebar.html",
+				"icls": "fa fa-circle-o",
+				"name": "Collapsed Sidebar",
+				"text": "Collapsed Sidebar"
+			}
+		]
+	},
+	{
+		"cls": "treeview",
+		"href": "pages/widgets.html",
+		"icls": "fa fa-th",
+		"name": "Widgets",
+		"text": "Widgets",
+		"scls": "pull-right-container",
+		"smcls": "label pull-right bg-green",
+		"smtext": "new"
+	}
+]

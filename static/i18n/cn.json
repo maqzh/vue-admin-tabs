@@ -1,0 +1,40 @@
+{
+	"action": {
+		"Ok": "确定",
+		"Cancel": "取消",
+		"Submit": "提交",
+		"Add": "添加",
+		"Delete": "删除",
+		"Edit": "编辑",
+		"Create": "创建",
+		"Search": "搜索"
+	},
+	"sidebar": {
+		"lang.text": "语言",
+		"layout": {
+			"text": "布局",
+			"fixed": "固定布局",
+			"boxed": "盒子布局",
+			"toggle": "收缩菜单",
+			"exportHover": "悬浮展开",
+			"slide": "收缩工具栏",
+			"skin": "收缩皮肤"
+		},
+		"skin": {
+			"text": "皮肤",
+			"blue": "蓝色",
+			"black": "黑色",
+			"purple": "紫色",
+			"green": "绿色",
+			"red": "红色",
+			"yellow": "黄色",
+			"lblue": "淡蓝",
+			"lblack": "淡黑",
+			"lpurple": "淡紫",
+			"lgreen": "淡绿",
+			"lred": "淡红",
+			"lyellow": "淡黄"
+		}
+	},
+	"tabbar.component.noexit": "组件【{component}】不存在!"
+}

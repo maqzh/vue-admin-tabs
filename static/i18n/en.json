@@ -1,0 +1,42 @@
+{
+	"action": {
+		"Ok": "OK",
+		"Cancel": "Cancel",
+		"Submit": "Submit",
+		"Add": "Add",
+		"Delete": "Delete",
+		"Edit": "Edit",
+		"Create": "Create",
+		"Search": "Search"
+	},
+	"sidebar": {
+		"lang.text": "Language",
+		"layout": {
+			"text": "Layout Options",
+			"fixed": "Fixed layout",
+			"boxed": "Boxed Layout",
+			"toggle": "Toggle Sidebar",
+			"exportHover": "Sidebar Expand on Hover",
+			"slide": "Toggle Right Sidebar Slide",
+			"skin": "Toggle Right Sidebar Skin"
+		},
+		"skin": {
+			"text": "Skins",
+			"blue": "Blue",
+			"black": "black",
+			"purple": "Purple",
+			"green": "Green",
+			"red": "Red",
+			"yellow": "Yellow",
+			"lblue": "Blue Light",
+			"lblack": "Block Light",
+			"lpurple": "Purple Light",
+			"lgreen": "Green Light",
+			"lred": "Red Light",
+			"lyellow": "Yellow Light"
+		}
+	},
+	"menu":{
+		"header":"MAIN NAVIGATION"
+	}
+}

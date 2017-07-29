@@ -20,9 +20,7 @@ use font-awesome 4.7.x
 
 use vue-layer 0.8.x
 
-~~use vue-resource 1.3.x~~
-
-use axios 0.16.x replace vue-resource
+use axios 0.16.x
 
 use vuex 2.3.x
 
